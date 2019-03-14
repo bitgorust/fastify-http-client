@@ -1,0 +1,44 @@
+{
+  "name": "fastify-curl",
+  "version": "1.0.0",
+  "description": "urllib plugin for fastify",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard",
+    "unit": "tap test.js",
+    "test": "npm run lint && npm run unit",
+    "coverage": "npm run unit --  --cov"
+  },
+  "pre-commit": [
+    "lint",
+    "test"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kenuyx/fastify-curl.git"
+  },
+  "keywords": [
+    "fastify",
+    "urllib",
+    "request",
+    "curl",
+    "httpclient",
+    "http-client"
+  ],
+  "author": "kenuyx <kenuyx@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kenuyx/fastify-curl/issues"
+  },
+  "homepage": "https://github.com/kenuyx/fastify-curl#readme",
+  "dependencies": {
+    "fastify-plugin": "^1.5.0",
+    "urllib": "^2.33.0"
+  },
+  "devDependencies": {
+    "fastify": "^2.0.1",
+    "pre-commit": "^1.2.2",
+    "standard": "^12.0.1",
+    "tap": "^12.5.3"
+  }
+}

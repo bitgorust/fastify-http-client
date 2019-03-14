@@ -33,11 +33,11 @@ bower_components
 build/Release
 
 # Dependency directories
-node_modules/
-jspm_packages/
+node_modules
+jspm_packages
 
 # TypeScript v1 declaration files
-typings/
+typings
 
 # Optional npm cache directory
 .npm
@@ -59,3 +59,33 @@ typings/
 
 # next.js build output
 .next
+
+# 0x
+profile-*
+
+# mac files
+.DS_Store
+
+# vim swap files
+*.swp
+
+# webstorm
+.idea
+
+# vscode
+.vscode
+.history
+*code-workspace
+
+# clinic
+profile*
+*clinic*
+*flamegraph*
+
+# lock files
+yarn.lock
+package-lock.json
+
+# generated code
+examples/typescript-server.js
+test/types/index.js
