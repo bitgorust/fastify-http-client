@@ -1,7 +1,8 @@
 # fastify-curl
 
+[![NPM](https://nodeico.herokuapp.com/@kenuyx/fastify-curl.svg)](https://npmjs.com/package/@kenuyx/fastify-curl)
+
 [![Build Status](https://travis-ci.org/kenuyx/fastify-curl.svg?branch=master)](https://travis-ci.org/kenuyx/fastify-curl)
-![NPM](https://img.shields.io/npm/l/@kenuyx/fastify-curl.svg)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
 [![codecov](https://codecov.io/gh/kenuyx/fastify-curl/branch/master/graph/badge.svg)](https://codecov.io/gh/kenuyx/fastify-curl)
 [![Known Vulnerabilities](https://snyk.io/test/github/kenuyx/fastify-curl/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kenuyx/fastify-curl?targetFile=package.json)
