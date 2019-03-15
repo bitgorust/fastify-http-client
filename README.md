@@ -1,6 +1,10 @@
 # fastify-curl
 
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/) [![Build Status](https://travis-ci.org/kenuyx/fastify-curl.svg?branch=master)](https://travis-ci.org/kenuyx/fastify-curl) [![Greenkeeper badge](https://badges.greenkeeper.io/kenuyx/fastify-curl.svg)](https://greenkeeper.io/)
+[![Build Status](https://travis-ci.org/kenuyx/fastify-curl.svg?branch=master)](https://travis-ci.org/kenuyx/fastify-curl)
+[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg?style=flat)](http://standardjs.com/)
+[![codecov](https://codecov.io/gh/kenuyx/fastify-curl/branch/master/graph/badge.svg)](https://codecov.io/gh/kenuyx/fastify-curl)
+[![Known Vulnerabilities](https://snyk.io/test/github/kenuyx/fastify-curl/badge.svg?targetFile=package.json)](https://snyk.io/test/github/kenuyx/fastify-curl?targetFile=package.json)
+[![Greenkeeper badge](https://badges.greenkeeper.io/kenuyx/fastify-curl.svg)](https://greenkeeper.io/)
 
 A plugin for [Fastify](http://fastify.io/) that adds support for sending HTTP(s) requests.
 
@@ -31,7 +35,8 @@ module.exports = function (fastify, opts, next) {
 
   // request via curl method
   fastify.curl('https://nodejs.org/en/').then((result) => {
-    console.log('status: %s, body size: %d, headers: %j', result.res.statusCode, result.data.length, result.res.headers)
+    console.log('status: %s, body size: %d, headers: %j',
+      result.res.statusCode, result.data.length, result.res.headers)
   }).catch((err) => {
     console.error(err)
   })

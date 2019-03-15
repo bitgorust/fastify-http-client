@@ -7,7 +7,8 @@
     "lint": "standard",
     "unit": "tap test.js",
     "test": "npm run lint && npm run unit",
-    "coverage": "npm run unit --  --cov"
+    "coverage": "npm run unit --  --cov",
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
   },
   "pre-commit": [
     "lint",

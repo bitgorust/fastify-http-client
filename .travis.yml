@@ -10,9 +10,8 @@ install:
 
 script:
   - npm run lint
-  - npm run unit
-  - istanbul cover ./node_modules/mocha/bin/_mocha --reporter lcovonly -- -R spec
-  - codecov
+  - npm run coverage
+  - npm run report-coverage
 
 notifications:
   email:
