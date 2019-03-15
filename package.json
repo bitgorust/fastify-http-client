@@ -1,6 +1,6 @@
 {
-  "name": "@kenuyx/fastify-curl",
-  "version": "1.0.1",
+  "name": "fastify-http-client",
+  "version": "1.0.0",
   "description": "urllib plugin for fastify",
   "main": "index.js",
   "scripts": {
@@ -16,7 +16,7 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kenuyx/fastify-curl.git"
+    "url": "git+https://github.com/kenuyx/fastify-http-client.git"
   },
   "keywords": [
     "fastify",
@@ -29,9 +29,9 @@
   "author": "kenuyx <kenuyx@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/kenuyx/fastify-curl/issues"
+    "url": "https://github.com/kenuyx/fastify-http-client/issues"
   },
-  "homepage": "https://github.com/kenuyx/fastify-curl#readme",
+  "homepage": "https://github.com/kenuyx/fastify-http-client#readme",
   "dependencies": {
     "fastify-plugin": "^1.5.0",
     "urllib": "^2.33.0"
