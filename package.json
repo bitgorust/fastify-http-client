@@ -1,5 +1,5 @@
 {
-  "name": "fastify-curl",
+  "name": "@kenuyx/fastify-curl",
   "version": "1.0.0",
   "description": "urllib plugin for fastify",
   "main": "index.js",

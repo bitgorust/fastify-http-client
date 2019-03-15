@@ -59,7 +59,7 @@ test('fastify.curl should be the same as urllib.HttpClient.curl method', t => {
   fastify.ready(err => {
     t.error(err)
 
-    fastify.curl('https://nodejs.org/en/', function (err, data, res) {
+    fastify.curl('https://nodejs.org/en/', (err, data, res) => {
       t.error(err)
       t.ok(data instanceof Buffer)
       t.equal(res.statusCode, 200)
