@@ -8,7 +8,9 @@
     "unit": "tap test.js",
     "test": "npm run lint && npm run unit",
     "coverage": "npm run unit --  --cov",
-    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+    "report-coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
   },
   "pre-commit": [
     "lint",
@@ -34,12 +36,14 @@
   "homepage": "https://github.com/kenuyx/fastify-http-client#readme",
   "dependencies": {
     "fastify-plugin": "^1.5.0",
-    "urllib": "^2.33.0"
+    "urllib": "^2.33.0",
+    "snyk": "^1.230.5"
   },
   "devDependencies": {
     "fastify": "^2.0.1",
     "pre-commit": "^1.2.2",
     "standard": "^12.0.1",
     "tap": "^13.0.0"
-  }
+  },
+  "snyk": true
 }
